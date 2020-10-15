@@ -29,11 +29,11 @@ console.log(example1[5])
 //l
 //a
 
-//let myName = "Manami Ueda"
-//console.log(`${myName[0]}${myName[7]}`)
-//let firstLetter = myName[0];
-//let secondLetter = myName[7];
-//console.log(firstLetter + secondLetter);
+let myName = "Manami Ueda"
+console.log(`${myName[0]}${myName[7]}`)
+let firstLetter = myName[0];
+let secondLetter = myName[7];
+console.log(firstLetter + secondLetter);
 //MU
 
 let Name = "Chel Mer"
@@ -50,16 +50,10 @@ console.log(FL + SL)
 console.log(Name[2])
 //e
 console.log(Name[2 + 3])
-//e
 //M
 console.log(Name[1 + 2 + 3])
 //e
-//M
-//e
 console.log(Name[1 + 2 + 3 + 4])
-//e
-//M
-//e
 //undefined
 //*note: terminal added values together =10 and there is no character at index 10.
 

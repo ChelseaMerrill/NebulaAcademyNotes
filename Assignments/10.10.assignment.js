@@ -1,9 +1,9 @@
 //level 0
 //Q0: Declare a string with the value equal to your name
 let Q0 = `CHELSEA`
-//Q1: Given the string, 'WE ARE SHOUTING!' log 'we are shouting'
-let Q1 = `WeAreShouting`
-console.log(Q1) 
+//Q1: Given the string, 'WE ARE SHOUTING' log 'we are shouting'
+let Q1 = `WE ARE SHOUTING`
+console.log(Q1.toLocaleLowerCase()) 
 
 //level 1
 //Q2: Declare a string and log its length
@@ -35,5 +35,5 @@ console.log(Q5[Q5.length - 1])
 //level 4
 //Q6: given the string 'welcome to my website', what is the character at the 7th index ? 
 let Q6 = `welcome to my website`
-console.log(Q6.charAt[7])
-//undefined
+console.log(Q6.charAt(7))
+//
