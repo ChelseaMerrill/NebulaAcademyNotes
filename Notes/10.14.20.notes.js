@@ -77,3 +77,11 @@ let First = FullName[0]
 let Last = FullName[1]
 console.log(First[0])
 console.log(Last[0]) 
+
+// ADDING STRINGS USING TEMPLATE LITERAL
+// We can have JS variable inside the string by using this syntax `${JAVASCRIPT HERE}`
+
+let IceCream = "mint choclate chip"
+//Log the string, 'My favorite ice cream flavor is (your favorite ice cream flavor)'
+console.log(`My favorite ice cream flavor is ${IceCream}`)
+//My favorite ice cream flavor is mint choclate chip

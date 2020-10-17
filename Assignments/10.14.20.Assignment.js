@@ -29,7 +29,11 @@ console.log(string.slice(7, 15))
 //software
 
 //Extract the word 'academy' and log it
+//first find the indexOf 'academy' and then count up
 console.log(string.slice(36, 46))
+//academy
+//also can do it by counting indexes backwards:
+console.log(string.slice(-7))
 //academy
 
 //Create a variable and assign the string: "we are learning new string methods"
