@@ -16,10 +16,10 @@ console.log(`The remainder of 30/2 is ${NewRemainder}`) // The remainder of 30/2
 // To get the reminder you have to divide the first number by the second number.  The second number is the value that is left after the bottom number has gone into the first number as many times as possible. For the first, 2 goes in 15 seven times and then 1 is left over so the remainder 1.  For the second, 2 goes into 30 an even amount of times so there is no remainder.
 
 // Log the boolean of 5 == '5'
-console.log(Boolean(5 == 5)) //true
+console.log(Boolean(5 == `5`)) //true
 
 // Log the boolean of  5 === '5'
-console.log(Boolean(5 === 5)) //true
+console.log(Boolean(5 === `5`)) //false
 
 // Log the boolean of 5 != '5'
 console.log(Boolean(5 != `5`)) //false
