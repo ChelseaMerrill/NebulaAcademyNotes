@@ -20,10 +20,11 @@ let problem2 = 2.5
 // Calculate the remainder and assign it to a variable
 // This function will return the string: "(num1) divided by (num2) is (number) with a remainder of (remainder)"
 function remainder(num1,num2){
-    return `${num1} divided by ${num2} is ${2} with a remainder of ${num1 % num2}`
+    return `${num1} divided by ${num2} is ${Math.floor(problem2)} with a remainder of ${num1 % num2}`
 }
 console.log(remainder(10, 4))
 //10 divided by 4 is 2 with a remainder of 2
+let rem = 2
 
 // Problem #3
 // Create a function called randomNums that returns a random number from 0 to 1000
@@ -54,6 +55,11 @@ console.log(isItArray(problem2))
 // Problem #6
 // Create a function called fifthIndex that takes in a string as a parameter
 // This function finds the 5th index of any string passed into this function
+function fifthIndex (AString){
+    return (AString[5])
+}
+console.log(fifthIndex('another string'))
+//e
 
 // Problem #7
 // Create a function called myInitials that takes in two parameters: firstName and lastName
