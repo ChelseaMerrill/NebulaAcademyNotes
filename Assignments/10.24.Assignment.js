@@ -2,11 +2,11 @@
 //Define a variable name and assign your name to it
 let Name = 'Chelsea'
 //Create a function that returns your name
-function FullName (FirstName, LastName){
-    return `My name is ${FirstName + LastName}`
+function NameFunction (ParameterName){
+    return ParameterName
 }
-console.log(FullName(`Chelsea `, `Merrill`))
-//My name is Chelsea Merrill
+console.log(NameFunction(Name))
+//Chelsea
 
 //Problem 2
 //Create a function that accepts 2 parameters, both of which are numbers, and returns the sum of those two numbers
@@ -30,8 +30,8 @@ var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'
 function FourthElement(singlefruit){
     return `The 4th fruit is ${singlefruit}`
 }
-console.log(FourthElement(fruits[4]))
-//The 4th fruit is plum
+console.log(FourthElement(fruits[3]))
+//The 4th fruit is lemon
 
 //Create a function that returns only the last element in the fruits array
 function LastElement(last){
@@ -42,18 +42,18 @@ console.log(fruits[6])
 
 //Create a function that returns [peach', 'lemon', 'plum', 'grape']
 function Section(fruitslice){
-    return Section
+    return fruitslice.slice(2, 6)
 }
-console.log(fruits.slice(2, 6))
+console.log(Section(fruits))
 //[ 'peach', 'lemon', 'plum', 'grape' ]
 
 //Create a function that adds another furit to the end of the array and returns the new array
-// function add(AddingFruit){
-//     console.log(AddingFruit,'AddingFruit')
-//     AddingFruit.push('melon') 
-//     return AddingFruit
-// }
-// console.log(add(fruits))
+function addFruit(AddingFruit){
+    AddingFruit.push('melon') 
+    return fruits
+}
+console.log(addFruit(fruits))
+//['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon', 'melon']
 
 //Create a funciton that returns the string, 'apple and orange and peach and lemon and plum and grape and watermelon'
 function string(fruits){
