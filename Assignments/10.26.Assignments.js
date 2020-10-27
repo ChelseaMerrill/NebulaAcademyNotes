@@ -31,7 +31,7 @@ let rem = 2
 function randomNums (parameter){
     return (Math.random() * 1000)
 }
-console.log(randomNums(1000))
+console.log(randomNums(75))
 //486.9958698294099
 
 // Problem #4
