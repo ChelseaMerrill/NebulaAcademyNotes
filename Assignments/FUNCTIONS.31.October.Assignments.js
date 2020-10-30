@@ -10,19 +10,14 @@ console.log (sumNum(17, 13))
 // Problem #2
 // Create a function called divisionRemainder that takes In two parameters: num1 and num2.
 // This function will divide num1 and num2 (num1/num2). Assign the number of num1/num2 to a variable
-function divisionRemainder( num1, num2){
-    return num1/num2
-}
-console.log(divisionRemainder(10, 4))
-//2.5
-let problem2 = 2.5
-
 // Calculate the remainder and assign it to a variable
 // This function will return the string: "(num1) divided by (num2) is (number) with a remainder of (remainder)"
-function remainder(num1,num2){
+
+function divisionRemainder( num1, num2){
+    let problem2 = num1/num2
     return `${num1} divided by ${num2} is ${Math.floor(problem2)} with a remainder of ${num1 % num2}`
 }
-console.log(remainder(10, 4))
+console.log(divisionRemainder(10, 4))
 //10 divided by 4 is 2 with a remainder of 2
 let rem = 2
 
@@ -49,7 +44,7 @@ console.log(theType(`Hello`))
 function isItArray (arrayChecker){
     return Array.isArray(arrayChecker)
 }
-console.log(isItArray(problem2))
+console.log(isItArray(rem))
 //false
 
 // Problem #6
