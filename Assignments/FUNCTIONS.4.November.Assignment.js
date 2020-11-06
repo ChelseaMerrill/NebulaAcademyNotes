@@ -49,7 +49,7 @@ function WhatIsDataType (param){
         return 'It\'s a Number'
     } if (typeof (param) === 'string'){
         return 'It\'s a String' 
-    } if (typeof (param)=== 'Boolean') {
+    } if (typeof (param)=== 'boolean') {
         return 'It\'s a Boolean'
     }
 }
