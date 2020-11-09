@@ -10,10 +10,10 @@ console.log(initials('Chelsea','Merrill'))
 // Problem 2
 // Create a function called bool that has returns the Boolean of any argument passed into it
 function bool (datatype){
-    return typeof(datatype)
+    return Boolean(datatype)
 }
-console.log(bool(true))
-//boolean
+console.log(bool(8))
+//true
  
 // Problem 3
 // Create a function called replaceA that takes in a string as a parameter.
