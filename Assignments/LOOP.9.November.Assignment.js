@@ -49,24 +49,24 @@ console.log(IterateArray(['hi', 'hello', 'hey']))
 // After the indices are logged, return the string, 'Done!'
 function StringCharacters (param){
     for (let i = 0; i < param.length; i++){
-        console.log(param[i]) 
+        console.log(i) 
     } return 'Done!'
 }
 console.log(StringCharacters('another string'))
-//a
-// n
-// o
-// t
-// h
-// e
-// r
-
-// s
-// t
-// r
-// i
-// n
-// g
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 11
+// 12
+// 13
 // Done!
 
 // Create a function that only logs the even numbers from 1-10
