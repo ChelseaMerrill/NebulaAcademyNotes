@@ -15,6 +15,7 @@ function OnlyOdd(param){
     } return placeholder
 }   
  console.log(OnlyOdd(numArray))
+ //[ 9, 3, 101, 15, 3 ]
 
 // Problem # 2
 // Using the array above, loop through the array and COUNT the amount of even numbers that are in the array
@@ -94,6 +95,7 @@ function ArrayNotByThree (param){
     } return total 
 } 
  console.log(ArrayNotByThree(theArray))
+ //[ 1, 4, 25, 11 ]
 
 // Problem # 7
 // Create another function that adds the numbers in the array that are NOT divisible by 3 and return the total
