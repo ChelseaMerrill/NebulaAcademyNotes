@@ -158,16 +158,43 @@ let nestedArray = [0, 1, [2, 3, 4], 5, 6, 7, [], [8, 9, 10], 11, 12, [13]]
 // 9
 
 // using the nestedArray above, log every number in the array and the nested array
-function loopGraph (array){
-    for (let i = 0; i < array.length; i++){
-        let row = array[i]
-        if (Array.isArray(row)) {
+// function loopGraph (array){
+//     for (let i = 0; i < array.length; i++){
+//         let row = array[i]
+//         if (Array.isArray(row)) {
         
-        for (let j = 0; j < row.length; j++){
-            let column = row[j]
-            console.log(column)
-            }
-        } else {console.log(row)}
-    } 
+//         for (let j = 0; j < row.length; j++){
+//             let column = row[j]
+//             console.log(column)
+//             }
+//         } else {console.log(row)}
+//     } 
+// }
+// console.log(loopGraph(nestedArray))
+
+let nestedArr = ['full', 'stack', ['node', 'react',], [], ['redux'], ['html', 'css'], 'sql']
+
+// using the nested array above (nestedArr), remove the first element in the nested arrays
+function Shifting (array) {
+    for (let i = 0; i < array.length; i++){
+        let arrayElement = array[i]
+        if (Array.isArray(arrayElement)){
+            arrayElement.shift()
+        }
+    }
+    return array
 }
-console.log(loopGraph(nestedArray))
+ console.log(Shifting(nestedArr))
+ //[ 'full', 'stack', [ 'react' ], [], [], [ 'css' ], 'sql' ]
+
+// using the nested array above (nestedArr), add 's' to every word in the elements inside the array and and in the nested arrays
+function addS (array) {
+    for (let i = 0; i < array.length; i++){
+        let arrayElement = array[i]
+        if (Array.isArray(arrayElement)){
+            arrayElement.push('s')
+        }
+    }
+    return array
+}
+ console.log(addS(nestedArr))
