@@ -63,22 +63,32 @@ function oddNest (array) {
 // Problem #3
 // Create a function that logs only the EVEN numbers in the array and in the nested arrays.
 // After logging every even number, return, 'Done!'
-// function evenNest (array) {
-//     for (let i = 0; i < array.length; i++){
-//         let numElement = array[i]
-//         if (Array.isArray(numElement)){
-//         for (let j = 0; j < numElement.length; j++){
-//             let addEven =numElement[j]    
-//             if (addEven % 2 === 0){ 
-//                 console.log(addEven)}
-//                  }
-//         } 
-//     } else if (element % 2 ===0){
-//         console.log(numElement)
-//     }
-//      return 'Done!'
-// }
-//     console.log(evenNest(nested)) 
+function evenNest (array){
+    for (let i = 0; i < array.length; i++){
+        let numElement = array[i]
+        if (Array.isArray(numElement)){
+            for (let j = 0; j < numElement.length; j++){
+                let addEven = numElement[j]
+                if (addEven % 2 === 0){
+                    console.log(addEven)
+                }
+            }
+        } else if (numElement % 2 === 0){
+            console.log(numElement)
+        }
+    } return 'hi!'
+}
+ console.log(evenNest(nested)) 
+ //2
+// 4
+// 6
+// 8
+// 10
+// 12
+// 14
+// 18
+// 20
+// Done!
 
  
 
@@ -142,26 +152,27 @@ function AddNested (array) {
 // function hasA (array){
 //     for (let i = 0; i < array.length; i++){
 //         let full = array[i]
-//         if (Array.isArray(full)) {
-//         for (let j = 0; j < full.length; j++){
-//             let nest = full[j]
-//             } if (nest.includes('a')){
+//         if (Array.isArray(full)){
+//             for (let j = 0; j < full.length; j++){
+//                 let nest = full[j]
+//             }
+//             if (nest.includes('a')) {
 //                 console.log(nest)
 //             }
-//         }
-//     } else if (full.includes('a')){
+//         } else if (full.includes('a')){
 //             console.log(full)
-//         }    
-//      return 'Done!'
+//     } 
 // }
-// console.log(hasA(nestedArr))
+//     return 'Chelsea'
+// }
+//  console.log(hasA(nestedArr))
  
 
 // Problem #7
 // Create a function that logs every word that has a length of 4 in the array and in the nested arrays.
 // Return 'Done!' at the end
 // function lengthOfFour (array){
-// for (i= 0; i< array.length; i++){
+//     for (i= 0; i< array.length; i++){
 //     let element = array[i]
 //     if (Array.isArray(element){
 //         for (let j = 0; j < element.length; j++0{
