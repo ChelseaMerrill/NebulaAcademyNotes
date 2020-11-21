@@ -149,43 +149,44 @@ function AddNested (array) {
 // Problem #6
 // Create a function that logs every word that has the letter 'a' in the word in the array and the nested arrays.
 // Return 'Done!' at the end
-// function hasA (array){
-//     for (let i = 0; i < array.length; i++){
-//         let full = array[i]
-//         if (Array.isArray(full)){
-//             for (let j = 0; j < full.length; j++){
-//                 let nest = full[j]
-//             }
-//             if (nest.includes('a')) {
-//                 console.log(nest)
-//             }
-//         } else if (full.includes('a')){
-//             console.log(full)
-//     } 
-// }
-//     return 'Chelsea'
-// }
-//  console.log(hasA(nestedArr))
+function hasA (array){
+    for (let i = 0; i < array.length; i++){
+        let full = array[i]
+        if (Array.isArray(full)){
+            for (let j = 0; j < full.length; j++){
+                let nest = full[j]
+                if (nest.includes('a')) {
+                    console.log(nest)
+                } else if (full.includes('a')){
+                    console.log(full)
+                } 
+            }
+        }
+    } 
+    return 'Chelsea'
+}
+ console.log(hasA(nestedArr))
+ 
  
 
 // Problem #7
 // Create a function that logs every word that has a length of 4 in the array and in the nested arrays.
 // Return 'Done!' at the end
-// function lengthOfFour (array){
-//     for (i= 0; i< array.length; i++){
-//     let element = array[i]
-//     if (Array.isArray(element){
-//         for (let j = 0; j < element.length; j++0{
-//                 let nestedElement = element[j]
-//                 if (nestedElement.length ===4){
-//                     console.log(nestedelement)
-//                 }
-//             }
-//         } else if (element.length ===4){
-//         console.log(element)
-//         }
-//     }       
-//     return 'Done!'
-// }
-// console.log(lengthOfFour(nestedArr))
+function lengthOfFour (array){
+    for (i= 0; i< array.length; i++){
+        let element = array[i]
+        if (Array.isArray(element)){
+            for (let j = 0; j < element.length; j++) {
+                let nestedElement = element[j]
+                if (nestedElement.length ===4){
+                    console.log(nestedElement)
+                }
+            }
+        } else if (element.length ===4){
+            console.log(element)
+        }
+    }       
+   return 'Done!'
+}
+console.log(lengthOfFour(nestedArr))
 
