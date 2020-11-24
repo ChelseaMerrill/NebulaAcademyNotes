@@ -13,11 +13,9 @@ let studentObject2 = {
 //problem #1   
 //Using the first studentObject1 above, create a function that returns the string, 'Tim is 22 years old'
 function ageOfTim (object){
-    for (let key in object){
         let studentName = object.name
         let studentAge = object.age
             return `${studentName} is ${studentAge} years old`
-        }
 }
 console.log(ageOfTim(studentObject1)) 
 // Tim is 22 years old
@@ -27,13 +25,14 @@ console.log(ageOfTim(studentObject1))
 //if they are 21+, return the string, 'welcome, (name)!' 
 //if not, return the string, 'try again in a couple years'
 function ageOfTim (object){
-    for (let key in object){
         let Name = object.name
-        if ( age >= 21)
+        let age = object.age
+        if ( age >= 21){
         return `Welcome ${Name}!`
-    } else
+    } else{
         return 'Try again in a couple years'
     }
+ }
 console.log(ageOfTim(studentObject1)) 
     
 //Problem #3
