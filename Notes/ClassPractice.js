@@ -1,3 +1,35 @@
+// Welcome!
+// https://www.codewars.com/kata/577ff15ad648a14b780000e7/train/javascript
+let hello = {english: 'Welcome',
+czech: 'Vitejte',
+danish: 'Velkomst',
+dutch: 'Welkom',
+estonian: 'Tere tulemast',
+finnish: 'Tervetuloa',
+flemish: 'Welgekomen',
+french: 'Bienvenue',
+german: 'Willkommen',
+irish: 'Failte',
+italian: 'Benvenuto',
+latvian: 'Gaidits',
+lithuanian: 'Laukiamas',
+polish: 'Witamy',
+spanish: 'Bienvenido',
+swedish: 'Valkommen',
+welsh: 'Croeso'
+}
+function greet(language) {
+	for (let key in hello){
+    if (language == key){
+      return hello[key]
+    }
+    }
+  return 'Welcome'
+  }
+console.log(greet)
+
+
+
 // Problem #6
 // Find the difference in age 
 // https://www.codewars.com/kata/5720a1cb65a504fdff0003e2

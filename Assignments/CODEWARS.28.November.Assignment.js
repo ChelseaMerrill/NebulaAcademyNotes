@@ -2,57 +2,35 @@
 // Larger Product or Sum
 // https://www.codewars.com/kata/5c4cb8fc3cf185147a5bdd02
 function sumOrProduct(array, n) {
-    let sum = 0
-    let product = 1
-    array.sort(function(a, b){return b - a})
-    for (let i = 0; i < array.length - n; i++){
-      sum += array[i] 
+  let sum = 0
+  let product = 1
+  array.sort(function(a, b){return b - a})
+  for (let i = 0; i < n; i++){
+    sum += array[i] 
+  }
+  for (let j = array.length - 1; j >= array.length - n; j--){
+    product *= array[j]
+  }
+    if (sum > product){
+      return 'sum'
     }
-    for (let j = array.length - 1; j >= array.length - n; j--){
-      product *= array[j]
-    }
-      if (sum > product){
-        return 'sum'
-      }
-    if (sum < product){
-      return 'product'
-    }
-    if (sum === product){
-      return 'same'
-    }
+  if (sum < product){
+    return 'product'
+  }
+  if (sum === product){
+    return 'same'
+  }
 }
+
 console.log(sumOrProduct([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4))
 //"sum"
 
 // Problem #2
 // Simple directions reversal
 // https://www.codewars.com/kata/5b94d7eb1d5ed297680000ca
-function solve(arr){
-    const directions = []
-    const roads = []
-    for (let i = 0; i < arr.length; i++){
-      const splitArr = arr[i].split("on")
-      directions.push(splitArr[0])
-      roads.push(splitArr[1])
-      
-      if directions.length > 1 {
-        for (let i = 0; i < directions.length; i++)
-          directions[i] === "Left"
-        directions[i] = "Right"
-      } else {
-        directions[i] = "Left"
-      }
-    }
-    directions.shift()
-    directions.push("Begin ")
-    const newPath = []
-    for (let i = 0; i < directions.length; i ++){
-      newPath.push(directions[i] + "on" + roads[i])
-    }
-    return newPath.reverse()
-  }
+
+  
    
- 
 
 // Problem #3
 // Life Path Number
