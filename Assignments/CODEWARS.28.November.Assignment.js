@@ -28,7 +28,36 @@ console.log(sumOrProduct([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4))
 // Problem #2
 // Simple directions reversal
 // https://www.codewars.com/kata/5b94d7eb1d5ed297680000ca
-
+function solve(arr){
+    const directions = [];
+    const roads = [];
+  
+  for (let i = 0; i < arr.length; i++){
+    const onIdx = arr[i].indexOf('on ');
+    directions.push(arr[i].slice(0, onIdx));
+    roads.push(arr[i].slice(onIdx+2, arr[i].length))
+  }
+   if (directions.length > 1){
+     console.log(directions)
+      for (let i = 0; i < directions.length; i++){
+        console.log(directions[i])
+       if (directions[i] === 'Left ' ){
+         directions[i] = 'Right '
+       } 
+      else if (directions[i] === 'Right ') {
+        console.log(i)
+         directions[i] = 'Left '
+       }
+      }
+    } 
+  directions.shift()
+  directions.push('Begin ')
+  const newPath = [];
+  for (let i = 0; i < directions.length; i++){
+    newPath.push(directions[i] + 'on' + roads[i])
+  }
+  return newPath.reverse()
+}
   
    
 
