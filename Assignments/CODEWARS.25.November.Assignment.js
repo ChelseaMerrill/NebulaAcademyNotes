@@ -74,3 +74,17 @@ function fakeBin(x){
 } 
     console.log(fakeBin('45385593107843568'))
  // '01011110001100111'
+
+ //Also could have done:
+//  function fakeBin(str){
+//   var newStr = "";
+//   for(var i=0;i<str.length;i++){
+//     if(Number(str[i])>=5){
+//       newStr += "1"
+//     }
+//     else{
+//       newStr += "0";
+//     }
+//   }
+//   return newStr;
+// }
