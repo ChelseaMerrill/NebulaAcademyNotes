@@ -48,22 +48,21 @@ console.log(solution('13', '200'))
 // Check the exam
 // https://www.codewars.com/kata/5a3dd29055519e23ec000074
 function checkExam(array1, array2) {
-    let total= 0
-    for (let i = 0; i < array1.length; i++){
-        for (let j = 0; j <array2.length; j++){
-         if (array1[i] === array2[j]){
-            total +=4
-        } if (array1[i] !== array2[j] && array1[i] !== "" && array2[j] !== "") {
-            total -=1 
-        }
-        }
+    let score = 0
+  for(let i = 0; i < array1.length; i++) {
+          if(array1[i].charAt(0) === array2[i].charAt(0)) {
+              score += 4;
+          } else if(array2[i].charAt(0)) {
+              score -= 1;
+          }
+  }
+    if (score < 0){
+      return 0
     }
-     if (total < 0) {
-       return 0
-    }
-    return total
+    return score
 }
-
+console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]))
+//6
  
 
 // Problem #5
