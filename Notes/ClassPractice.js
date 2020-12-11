@@ -78,3 +78,18 @@ function rowWeights(array){
 // Problem #10
 // Nth smallest element
 // https://www.codewars.com/kata/5a512f6a80eba857280000fc
+
+
+//Higher Order Functions
+
+let numArr = [2, 4, 6, 8, 10]
+function OddIndex (arr){
+  return arr.map((num, index), index.length % 2 === 1)
+}
+console.log(OddIndex(numArr))
+
+// Counting sheep
+// https://www.codewars.com/kata/54edbc7200b811e956000556
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
