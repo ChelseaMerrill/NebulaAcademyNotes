@@ -11,21 +11,18 @@ console.log(quarterOf(3))
 //Multiplication Table
 //https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce
 function multiTable(num) {
-    let total = ''
-    let two = (num *2)
-    let three = (num *3)
-    let four = (num *4)
-    let five = (num *5)
-    let six = (num *6)
-    let seven = (num *7)
-    let eight = (num *8)
-    let nine = (num *9)
-    let ten = (num *10)
-    {
-        total = `1 * ${num} = ${num}\n2 * ${num} = ${two}\n3 * ${num} = ${three}\n4 * ${num} = ${four}\n5 * ${num} = ${five}\n6 * ${num} = ${six}\n7 * ${num} = ${seven}\n8 * ${num} = ${eight}\n9 * ${num} = ${nine}\n10 * ${num} = ${ten}`
-      }
-      return total
-  }
+  let total = ''
+  let two = (num *2)
+  let three = (num *3)
+  let four = (num *4)
+  let five = (num *5)
+  let six = (num *6)
+  let seven = (num *7)
+  let eight = (num *8)
+  let nine = (num *9)
+  let ten = (num *10)
+    return (`1 * ${num} = ${num}\n2 * ${num} = ${two}\n3 * ${num} = ${three}\n4 * ${num} = ${four}\n5 * ${num} = ${five}\n6 * ${num} = ${six}\n7 * ${num} = ${seven}\n8 * ${num} = ${eight}\n9 * ${num} = ${nine}\n10 * ${num} = ${ten}`)
+}
   console.log(multiTable(5))
   //'1 * 5 = 5\n2 * 5 = 10\n3 * 5 = 15\n4 * 5 = 20\n5 * 5 = 25\n6 * 5 = 30\n7 * 5 = 35\n8 * 5 = 40\n9 * 5 = 45\n10 * 5 = 50')
 
