@@ -48,6 +48,9 @@ console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2
 function countPositivesSumNegatives(input) {
     let pos = 0
     let neg = 0
+    if (input === null){
+      return []
+    }
     for (let i = 0; i < input.length; i++){
     if (input[i] > 0 ){
     pos += 1
