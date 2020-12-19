@@ -1,0 +1,21 @@
+h1 {
+    color: palevioletred;
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 200 px;
+}
+p {
+    width: 380 px;
+    text-align: center;
+}
+.content {
+    border-style: solid;
+    border-color: goldenrod;
+    margin: 30px;
+    padding: 25px;
+}
