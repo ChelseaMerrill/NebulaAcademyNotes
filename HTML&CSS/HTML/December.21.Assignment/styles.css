@@ -1,0 +1,35 @@
+h1 {
+    color: rgba(60, 60, 223, 0.897);
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+}
+h2 {
+    text-align: center;
+    color: rgb(224, 224, 14);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+p {
+    width: 380 px;
+    text-align: center;
+    color: royalblue;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    border-style: solid;
+    border-width: 7px;
+    border-color:rgb(2, 78, 2);
+    margin: 30px;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+img {
+ display: flex;
+ justify-self: center;
+}

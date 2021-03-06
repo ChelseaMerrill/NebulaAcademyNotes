@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    color: black;
+
+}
+
+.intro {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: bold;
+    color: #706761;
+}
+.foot {
+    color: white;
+}
+.bio {
+    width: 700px;
+    line-height: 200%;
+}
+.header {
+    padding: 2px;
+    text-align: center;
+    background-color: #706761;
+    color: white;
+    font-size: 20px;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: bolder;
+  }
+  .footer {
+      padding: 2px;
+      text-align: center;
+      background-color: #706761;
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+  }
+
+.links{
+    display: flex;
+    justify-content: center; 
+}
+
+
+
+html {
+background-color: white;}
+
+div a {
+  text-decoration: none;
+  color: rgb(230, 220, 220);
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {display: inline-block;}
+ul li:hover {background: rgb(216, 212, 204);}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #706761; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background:#706761 ;}
+
+

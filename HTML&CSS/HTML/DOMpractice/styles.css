@@ -1,0 +1,22 @@
+body {
+    background-color:rgb(223, 223, 240);
+}
+
+h1{
+    color: rgb(122, 106, 109);
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+    border: solid;
+    border-width: 1mm;
+    border-color:rgb(0, 48, 77);
+    border-radius: 50%;
+    font-size: 40pt;
+    background-color: darkgoldenrod;
+}
